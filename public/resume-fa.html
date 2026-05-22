@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جواد ملکیان - رزومه</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Vazirmatn',-apple-system,sans-serif;background:#f3f4f6;color:#1f2937;line-height:1.8;padding:40px 20px}
+    .resume{max-width:900px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);overflow:hidden}
+    .header{background:linear-gradient(135deg,#6366f1,#06b6d4);padding:48px 56px;color:#fff;display:flex;gap:40px;align-items:center}
+    .header-avatar{width:120px;height:120px;border-radius:50%;border:4px solid rgba(255,255,255,.4);object-fit:cover;flex-shrink:0}
+    .header-info h1{font-size:36px;font-weight:700;letter-spacing:-1px;margin-bottom:4px}
+    .header-info .title{font-size:18px;font-weight:500;opacity:.95;margin-bottom:12px}
+    .header-info .meta{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;opacity:.9}
+    .header-info .meta span{display:flex;align-items:center;gap:6px}
+    .body{padding:48px 56px;display:grid;grid-template-columns:1fr 280px;gap:40px}
+    .main h2,.sidebar h2{font-size:16px;font-weight:700;letter-spacing:1px;color:#6366f1;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #e5e7eb}
+    .main h2{margin-top:32px}
+    .main h2:first-child{margin-top:0}
+    .about p{font-size:14px;color:#4b5563;line-height:2}
+    .exp-item{margin-bottom:20px;padding:16px;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb}
+    .exp-item:last-child{margin-bottom:0}
+    .exp-header{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+    .exp-logo{width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff;padding:4px;border:1px solid #e5e7eb}
+    .exp-role{font-size:14px;font-weight:600;color:#111827}
+    .exp-date{font-size:11px;padding:2px 8px;border-radius:999px;background:#eef2ff;color:#4f46e5;font-weight:500}
+    .exp-company{font-size:12px;color:#6b7280;margin-bottom:8px;padding-right:44px}
+    .exp-desc{font-size:12px;color:#6b7280;line-height:1.7;padding-right:44px}
+    .project{margin-bottom:24px}
+    .project:last-child{margin-bottom:0}
+    .project-header{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+    .project-logo{width:36px;height:36px;border-radius:8px;object-fit:contain;background:#f9fafb;padding:4px;border:1px solid #e5e7eb}
+    .project-name{font-size:16px;font-weight:600;color:#111827}
+    .project-desc{font-size:13px;color:#6b7280;margin-bottom:8px;padding-right:48px}
+    .project-tech{display:flex;flex-wrap:wrap;gap:6px;padding-right:48px;margin-bottom:6px}
+    .project-tech span{font-size:11px;padding:3px 10px;border-radius:999px;background:#eef2ff;color:#4f46e5;font-weight:500}
+    .project-links{padding-right:48px;font-size:12px}
+    .project-links a{color:#6366f1;text-decoration:none;margin-left:16px}
+    .project-links a:hover{text-decoration:underline}
+    .skill-group{margin-bottom:20px}
+    .skill-group h3{font-size:12px;font-weight:600;letter-spacing:.5px;color:#9ca3af;margin-bottom:8px}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+    .skill-tags span{font-size:11px;padding:4px 10px;border-radius:6px;background:#f3f4f6;color:#374151;font-weight:500}
+    .sidebar-section{margin-bottom:28px}
+    .sidebar-section:last-child{margin-bottom:0}
+    .sidebar-section h2{font-size:13px}
+    .contact-item{display:flex;align-items:center;gap:10px;font-size:13px;color:#4b5563;margin-bottom:12px}
+    .contact-item .icon{width:32px;height:32px;border-radius:8px;background:#eef2ff;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+    .contact-item a{color:#4b5563;text-decoration:none}
+    .contact-item a:hover{color:#6366f1}
+    .cert-item{display:flex;align-items:center;gap:10px;font-size:13px;color:#4b5563;margin-bottom:12px;padding:10px 12px;background:#f9fafb;border-radius:8px;border:1px solid #e5e7eb}
+    .cert-item .badge{width:8px;height:8px;border-radius:50%;background:#6366f1;flex-shrink:0}
+    .cert-item .cert-title{font-weight:600;color:#111827}
+    .cert-item .cert-source{font-size:11px;color:#9ca3af}
+    .cert-item a{font-size:11px;color:#6366f1;text-decoration:none;margin-right:auto;white-space:nowrap}
+    .lang-item{display:flex;justify-content:space-between;font-size:13px;color:#4b5563;margin-bottom:8px}
+    .lang-item .level{color:#9ca3af;font-size:12px}
+    @media print{body{background:#fff;padding:0}.resume{box-shadow:none;border-radius:0;max-width:100%}.header{padding:36px 44px}.body{padding:36px 44px}@page{margin:0;size:A4}}
+    @media(max-width:700px){.header{flex-direction:column;text-align:center;padding:32px 24px}.header .meta{justify-content:center}.body{grid-template-columns:1fr;padding:32px 24px}}
+  </style>
+</head>
+<body>
+<div class="resume">
+  <div class="header">
+    <img src="/profile-picture-2.png" alt="جواد ملکیان" class="header-avatar">
+    <div class="header-info">
+      <h1>جواد ملکیان</h1>
+      <div class="title">توسعه‌دهنده فول‌استک</div>
+      <div class="meta">
+        <span>📍 ایران، تهران</span>
+        <span>✅ پایان خدمت سربازی</span>
+        <span>📧 jvd.malek0079@gmail.com</span>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="main">
+      <h2>درباره من</h2>
+      <div class="about"><p>توسعه‌دهنده فول‌استک با بیش از ۳ سال تجربه در ساخت اپلیکیشن‌های وب مقیاس‌پذیر. متخصص در اکوسیستم مدرن جاوااسکریپت — از React و Next.js در فرانت‌اند تا Node.js، GraphQL، Fastify و REST API در بک‌اند. با تجربه در طراحی سیستم‌های پیچیده شامل درگاه پرداخت، احراز هویت با پیامک، ربات بله و پنل مدیریت جامع.</p></div>
+
+      <h2>سابقه کار</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <img src="/neynegar-Logo.webp" alt="NeyNegar" class="exp-logo">
+          <span class="exp-role">توسعه‌دهنده فول‌استک</span>
+          <span class="exp-date">۱۴۰۲ — ۱۴۰۴</span>
+        </div>
+        <div class="exp-company">نی نگار — فروشگاه اینترنتی هنر</div>
+        <div class="exp-desc">طراحی و توسعه کامل یک فروشگاه اینترنتی برای هنر خوشنویسی و هنرهای تجسمی ایرانی. بک‌اند GraphQL با Apollo Server و MongoDB، فرانت‌اند Next.js. پیاده‌سازی احراز هویت با پیامک، درگاه زرین‌پال، مدیریت دوره‌ها و پنل ادمین جامع.</div>
+        <div style="padding-right:44px;margin-top:8px;display:flex;gap:12px;font-size:11px">
+          <a href="https://github.com/jvd-malek/neynegar-next-version" target="_blank" style="color:#6366f1;text-decoration:none">🔗 فرانت‌اند</a>
+          <a href="https://github.com/jvd-malek/neynegar-graphql-version" target="_blank" style="color:#6366f1;text-decoration:none">🔗 بک‌اند</a>
+          <a href="https://neynegar1.ir" target="_blank" style="color:#6366f1;text-decoration:none">🌐 وبسایت</a>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <img src="/aqua-blue-Logo.webp" alt="Aqua Blue" class="exp-logo">
+          <span class="exp-role">توسعه‌دهنده فول‌استک</span>
+          <span class="exp-date">۱۴۰۵ — اکنون</span>
+        </div>
+        <div class="exp-company">آکوا بلو — فروشگاه اینترنتی حیوانات خانگی</div>
+        <div class="exp-desc">معماری و ساخت یک فروشگاه اینترنتی مدرن برای حیوانات خانگی و آکواریوم. بک‌اند با Fastify + TypeScript + PostgreSQL و Drizzle ORM، فرانت‌اند با Next.js 16. شامل سبد خرید لحظه‌ای، ربات بله، داشبورد تحلیلی و ادغام سبد مهمان.</div>
+        <div style="padding-right:44px;margin-top:8px;display:flex;gap:12px;font-size:11px">
+          <a href="https://github.com/jvd-malek/aqua-blue-frontend" target="_blank" style="color:#6366f1;text-decoration:none">🔗 فرانت‌اند</a>
+          <a href="https://github.com/jvd-malek/aqua-blue-backend" target="_blank" style="color:#6366f1;text-decoration:none">🔗 بک‌اند</a>
+          <a href="https://aquablueiran.com" target="_blank" style="color:#6366f1;text-decoration:none">🌐 وبسایت</a>
+        </div>
+      </div>
+
+      <h2>سایر پروژه‌ها</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <img src="/Logo-bahmansabz.webp" alt="بهمن سبز" class="project-logo">
+          <span class="project-name">بهمن سبز — تسک مصاحبه</span>
+        </div>
+        <div class="project-desc">تسک عملی مصاحبه ورودی بهمن سبز. شامل فیلتر محصولات سمت سرور با صفحه‌بندی، متادیتای سئو، احراز هویت با کوکی و کامپوننت‌های سفارشی.</div>
+        <div class="project-tech">
+          <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Tailwind CSS 4</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jvd-malek/frontend-test-bahmansabz" target="_blank">🔗 ریپازیتوری</a>
+          <a href="https://frontend-test-bahmansabz.vercel.app" target="_blank">🌐 نسخه آنلاین</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <div class="project-logo" style="display:flex;align-items:center;justify-content:center;font-size:20px">🤖</div>
+          <span class="project-name">ربات خرید بله</span>
+        </div>
+        <div class="project-desc">ربات خرید تلگرامی (مشابه بله) ساخته شده برای پلتفرم‌های نی نگار و آکوا بلو. کاربران می‌توانند محصولات را مرور کنند، سفارشات را پیگیری کنند، تخفیف‌ها را دریافت کنند و پشتیبانی بگیرند. ادمین‌ها برای سفارشات جدید، کامنت‌ها و تیکت‌ها نوتیفیکیشن لحظه‌ای دریافت می‌کنند.</div>
+        <div class="project-tech">
+          <span>Node.js</span><span>Axios</span><span>Long Polling</span><span>REST API</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <h2>تماس</h2>
+        <div class="contact-item"><div class="icon">📧</div><a href="mailto:jvd.malek0079@gmail.com">jvd.malek0079@gmail.com</a></div>
+        <div class="contact-item"><div class="icon">🔗</div><a href="https://linkedin.com/in/javad-malekian" target="_blank">linkedin.com/in/javad-malekian</a></div>
+        <div class="contact-item"><div class="icon">💻</div><a href="https://github.com/jvd-malek" target="_blank">github.com/jvd-malek</a></div>
+        <div class="contact-item"><div class="icon">✈️</div><a href="https://t.me/jvdmalek" target="_blank">@jvdmalek</a></div>
+        <div class="contact-item"><div class="icon">📱</div><a href="https://eitaa.com/jvdmalek" target="_blank">@jvdmalek</a></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>مهارت‌ها</h2>
+        <div class="skill-group">
+          <h3>فرانت‌اند</h3>
+          <div class="skill-tags">
+            <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+            <span>JavaScript</span><span>Zustand</span><span>SWR</span><span>Apollo Client</span><span>Material UI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>بک‌اند</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span><span>Fastify</span><span>GraphQL</span>
+            <span>REST API</span><span>Apollo Server</span><span>JWT</span><span>MongoDB</span>
+            <span>Mongoose</span><span>PostgreSQL</span><span>Drizzle ORM</span><span>Zod</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ابزارها</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Vercel</span><span>SMS API</span><span>زرین‌پال</span>
+            <span>Web Push</span><span>ربات بله</span><span>SEO</span><span>Clean Code</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>گواهینامه‌ها</h2>
+        <div class="cert-item">
+          <div class="badge"></div>
+          <div><div class="cert-title">سئوی کاربردی</div><div class="cert-source">مکتب‌خونه</div></div>
+          <a href="https://www.maktabkhooneh.org/certificates/MK-PUNMCX/" target="_blank">اعتبارسنجی</a>
+        </div>
+        <div class="cert-item">
+          <div class="badge"></div>
+          <div><div class="cert-title">Clean Code</div><div class="cert-source">مکتب‌خونه</div></div>
+          <a href="https://www.maktabkhooneh.org/certificates/MK-LJ4YSK/" target="_blank">اعتبارسنجی</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>زبان‌ها</h2>
+        <div class="lang-item"><span>فارسی</span><span class="level">زبان مادری</span></div>
+        <div class="lang-item"><span>انگلیسی</span><span class="level">مسلط</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
