@@ -226,7 +226,7 @@ export function updateContent() {
   // update resume button href
   const resumeBtns = document.querySelectorAll('#resume-btn, .resume-btn')
   resumeBtns.forEach(btn => {
-    btn.href = currentLang === 'fa' ? '/resume-fa.html' : '/resume-en.html'
+    btn.href = currentLang === 'fa' ? '/resume-fa.pdf' : '/resume-en.pdf'
   })
 }
 
