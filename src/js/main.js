@@ -82,7 +82,7 @@ function renderHero() {
               <a href="#contact" class="px-8 py-3 border-2 border-gray-600 text-gray-300 font-medium rounded-xl hover:border-primary hover:text-primary transition-all duration-300">
                 ${t('hero.cta2')}
               </a>
-              <a href="${getLang() === 'fa' ? '/resume-fa.pdf' : '/resume-en.pdf'}" download="javad-malekian-resume.pdf" class="resume-btn px-8 py-3 border-2 border-gray-600 text-gray-300 font-medium rounded-xl hover:border-primary hover:text-primary transition-all duration-300 flex items-center gap-2">
+              <a href="${getLang() === 'fa' ? '/javad-malekian-resume-fa.pdf' : '/javad-malekian-resume.pdf'}" download="javad-malekian-resume.pdf" class="resume-btn px-8 py-3 border-2 border-gray-600 text-gray-300 font-medium rounded-xl hover:border-primary hover:text-primary transition-all duration-300 flex items-center gap-2">
                 <span>📄</span>
                 <span>${t('hero.cta3')}</span>
               </a>
@@ -410,7 +410,7 @@ function renderContact() {
                   Eitaa
                 </a>
               </div>
-              <a href="${getLang() === 'fa' ? '/resume-fa.pdf' : '/resume-en.pdf'}" download="javad-malekian-resume.pdf" class="resume-btn flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:shadow-primary/30 transition-all text-xs font-medium mt-3">
+              <a href="${getLang() === 'fa' ? '/javad-malekian-resume-fa.pdf' : '/javad-malekian-resume.pdf'}" download="javad-malekian-resume.pdf" class="resume-btn flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:shadow-primary/30 transition-all text-xs font-medium mt-3">
                 <span>📄</span>
                 <span>${t('hero.cta3')}</span>
               </a>

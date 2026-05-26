@@ -70,8 +70,8 @@ const browser = await puppeteer.launch({
   args: ['--no-sandbox', '--disable-setuid-sandbox'],
 })
 
-await generatePDF(browser, `http://localhost:${port}/resume-en.html`, join(outputDir, 'resume-en.pdf'))
-await generatePDF(browser, `http://localhost:${port}/resume-fa.html`, join(outputDir, 'resume-fa.pdf'))
+await generatePDF(browser, `http://localhost:${port}/resume-en.html`, join(outputDir, 'javad-malekian-resume.pdf'))
+await generatePDF(browser, `http://localhost:${port}/resume-fa.html`, join(outputDir, 'javad-malekian-resume-fa.pdf'))
 
 await browser.close()
 server.close()
